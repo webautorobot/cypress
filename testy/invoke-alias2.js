@@ -1,0 +1,16 @@
+/// <reference types="Cypress" />
+//<a class="prdocutname" href="https://automationteststore.com/index.php?rt=product/product&amp;path=52&amp;product_id=70" title="Eau Parfumee au The Vert Shampoo">Eau Parfumee au The Vert Shampoo</a>
+
+//Test  from automationteststore site
+describe("Test Automationsite page Invoke & Alias", () => {
+  it("Iterate list of products and count number of products on main page", () => {
+    cy.visit("https://automationteststore.com");
+    cy.log('Loop products');
+    cy.get('#maincontainer .thumbnail').each(($el, index, $list) => {
+      cy.log('Index: ' + index + ' : ' + $el.text());
+    });
+    
+
+    cy.log('Test 1 completed!');
+  });
+});
