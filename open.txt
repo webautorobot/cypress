@@ -1,1 +1,4 @@
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 ./node_modules/.bin/cypress open
+cypress run --record --key 16e7861c-cf9e-431f-8b5b-200578ed9a97
+./node_modules/.bin/cypress run --record --key 16e7861c-cf9e-431f-8b5b-200578ed9a97
