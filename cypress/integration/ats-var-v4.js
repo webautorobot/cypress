@@ -1,7 +1,7 @@
 //Test contact us from automationstore site with variables
 describe("Test with variable, cypress and jquery", () => {
     it.only("Navigation with variables with specific products", () => {
-        cy.visit('/');
+        cy.visit('https://automationteststore.com');
 
         const manuLink = "a[href*='product/category&path=']";
         const menuItem = [68, 36, 43, 49, 58, 52, 65];
